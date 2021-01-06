@@ -6,20 +6,20 @@ Full version of the paper will be available by 6th January, 2021.
 
 ```
 git clone <enrichdb git repo link>
-cd ..
-sudo docker build -t tagdb tagdb/
+sudo docker build -t enrichdb enrichdb/
+sudo docker run --name enrichdb_con enrichdb
 ```
 
 Connect to  postgresql running tagdb inside docker 
 ```
-sudo docker exec -it tag_con bash
+sudo docker exec -it enrichdb_con bash
 su - postgres 
 /usr/local/pgsql/bin/psql test
 ```
 Run UI to execute and visualize queries
 
 ```
-cd ui
+cd enrichdb/ui
 python server.py  # requires python2
 
 UI is accessible at localhost:8000
