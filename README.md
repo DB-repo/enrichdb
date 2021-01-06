@@ -1,6 +1,8 @@
 # EnrichDB: A Database System for Progressive Data Enrichmentand Query Evaluation 
 
-Full version of the paper will be available by 6th January, 2021.
+Full version of the paper is as follows:
+https://github.com/DB-repo/enrichdb/blob/master/EnrichDB_Technical_Report.pdf
+
 
 ### Installlation Using Docker
 
