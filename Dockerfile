@@ -53,8 +53,8 @@ ADD ./scripts /usr/local/tagdb/scripts
 ADD ./src /usr/local/tagdb/src
 
 RUN cd /usr/local/tagdb/ && ./configure -DPOSTGRESQL_13_PG_CONFIG=/usr/local/pgsql/bin/pg_config 
-RUN	cd /usr/local/tagdb/build && make  -j 4; exit 0 
-RUN cd /usr/local/tagdb/build && make  -j 4 
+RUN	cd /usr/local/tagdb/build && make  -j 1; exit 0 
+RUN cd /usr/local/tagdb/build && make  -j 1 
 
 RUN yum install -y passwd which
 RUN echo "postgres" | passwd --stdin postgres
