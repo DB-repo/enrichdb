@@ -4,12 +4,12 @@ Full version of the paper is as follows:
 https://github.com/DB-repo/enrichdb/blob/master/EnrichDB_Technical_Report.pdf
 
 
-### Installlation Using Docker
+### Installlation Using Docker (tested on Ubuntu 16.04, 18.04, and 20.04)
 
 ```
 git clone <enrichdb git repo link>
 sudo docker build -t enrichdb enrichdb/
-sudo docker run --name enrichdb_con enrichdb
+sudo docker run --net=host --name enrichdb_con enrichdb
 ```
 
 Connect to  postgresql running tagdb inside docker 
