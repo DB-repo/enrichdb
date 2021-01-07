@@ -36,7 +36,7 @@ tweets.timestamp as tweet_time, tweets.sentiment as tweet_sentiment @FROM tweets
 @WHERE  tweets.sentiment = 0 AND tweets.id < 700
 ```
 In the UI, set the following values in the corresponding boxes. 
-Set epoch_duration = 5, max_epoch = 10, select "Tweets" from the drop-down menu, check the auto-reload box, and provide a value in the token that was not used before (e.g., q1). Click on the search button next to the search box. Once submitted, the interface will show that "Query submitted successfully". 
+Set epoch_duration = 5, max_epoch = 10, select "Tweets" from the drop-down menu, check the auto-reload box, and provide a value in the token that was not used before (e.g., q1). Click on the search button next to the search box. Once submitted, the interface will show that "Query submitted successfully". Please refer to the following gif file for the steps.
 
 ![](tagdb-ui.gif)
 
