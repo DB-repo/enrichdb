@@ -9,7 +9,7 @@ https://github.com/DB-repo/enrichdb/blob/master/EnrichDB_Technical_Report.pdf
 ```
 git clone <enrichdb git repo link>
 sudo docker build -t enrichdb enrichdb/
-sudo docker run --net=host --name enrichdb_con enrichdb
+sudo docker run -p 5000:5000 --name enrichdb_con enrichdb
 ```
 
 Connect to  postgresql running tagdb inside docker 
