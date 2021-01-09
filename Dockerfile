@@ -7,6 +7,8 @@ FROM centos:centos8
 RUN yum -y --noplugins --verbose install git wget tar
 
 RUN git clone https://github.com/sraoss/pgsql-ivm
+RUN cd pgsql-ivm && git checkout 3bf6953688153fa72dd48478a77e37cf3111a1ee && cd ..
+
 
 RUN yum -y install gcc
 RUN yum install -y bison readline zlib openssl
@@ -98,3 +100,4 @@ EXPOSE 5432
 EXPOSE 8000
 EXPOSE 80
 EXPOSE 8080
+EXPOSE 5000
