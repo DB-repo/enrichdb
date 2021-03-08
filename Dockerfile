@@ -19,7 +19,7 @@ RUN yum install -y zlib-devel
 
 # Installing PIP
 RUN  yum install -y python2
-RUN wget "https://bootstrap.pypa.io/get-pip.py"  && python2 get-pip.py
+RUN wget "https://bootstrap.pypa.io/pip/2.7/get-pip.py"  && python2 get-pip.py
 RUN ln -s /usr/bin/python2 /usr/bin/python
 RUN yum install -y python2-devel
 
