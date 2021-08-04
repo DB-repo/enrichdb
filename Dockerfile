@@ -33,7 +33,16 @@ RUN  /usr/local/pgsql/bin/pg_ctl -D /usr/local/pgsql/data/ start &&  /usr/local/
 USER root
 
 
-RUN yum install -y cmake m4 flex bison graphviz 
+RUN yum install -y m4 flex bison graphviz 
+
+RUN wget "https://cmake.org/files/v3.11/cmake-3.11.0.tar.gz" \
+&& tar xzf  cmake-3.11.0.tar.gz \
+&& rm cmake-3.11.0.tar.gz \
+&& cd cmake-3.11.0 \
+&& ./bootstrap --prefix=/usr/local/\
+&& make \
+&& make install \
+&& cd ..
 
 # Adding TagDB Code Directory
 
